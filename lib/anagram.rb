@@ -7,8 +7,13 @@ class Anagram
   
   def match(array)
     matches = []
+    letters = @word.split("")
     array.each do |word| 
-      matches << word.match(/A[#{@word}]{#{@word.length}}z/)
+      if word.length == letters.length
+        letters.each do |letter|
+          word.include?(letter)
+        end
+      end
     end
     matches
   end
