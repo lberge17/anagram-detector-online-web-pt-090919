@@ -8,5 +8,6 @@ class Anagram
   def match(array)
     array.find{|word| word.match[/[@word]{@word.length}/]
   end
+  end
   
 end
