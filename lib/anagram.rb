@@ -6,7 +6,7 @@ class Anagram
   end
   
   def match(array)
-    array.
+    array.find{|word| word.
   end
   
 end
