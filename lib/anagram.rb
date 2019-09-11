@@ -6,6 +6,7 @@ class Anagram
   end
   
   def match(array)
+    matches = []
     array.detect{|word| word.match(/A[@word]{@word.length}z/)}
   end
   
