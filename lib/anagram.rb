@@ -10,6 +10,7 @@ class Anagram
     array.each do |word| 
       matches << word.match(/A[@word]{@word.length}z/)
     end
+    matches
   end
   
 end
