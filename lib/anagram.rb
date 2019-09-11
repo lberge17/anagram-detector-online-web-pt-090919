@@ -7,14 +7,10 @@ class Anagram
   
   def match(array)
     matches = []
-    letters = @word.split("")
-    array.each do |word| 
-      if word.length == letters.length
-        letters.each do |letter|
-          word.include?(letter)
-        end
-      end
-    end
+    
+    array.
+    @word.split("").sort == word.split("").sort
+    
     matches
   end
   
