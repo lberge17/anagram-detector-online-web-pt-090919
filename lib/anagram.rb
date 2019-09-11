@@ -8,7 +8,7 @@ class Anagram
   def match(array)
     matches = []
     array.each do |word| 
-      matches << word.match(/A[@word]{@word.length}z/)
+      matches << word.match(/A[#{@word}]{#{@word.length}}z/)
     end
     matches
   end
